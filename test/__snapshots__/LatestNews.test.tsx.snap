@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LatestNews renders correctly 1`] = `
+<div
+  className="fd-card fd-card-latest-news"
+>
+  <h3
+    className="fd-typography card-h h-latest-news"
+    textStyle="card-h"
+  >
+    Laatste nieuws
+  </h3>
+  <nav>
+    <a
+      href="https://fd.nl"
+    >
+      <time>
+        15:29
+      </time>
+      <span>
+        title van nieuwsbericht
+      </span>
+    </a>
+  </nav>
+  <a
+    href="/laatste-nieuws"
+  >
+    Lees al het laatste nieuws
+  </a>
+</div>
+`;
+
+exports[`LatestNews renders correctly 2`] = `
+<div
+  className="fd-card fd-card-latest-news class-name"
+>
+  <h3
+    className="fd-typography card-h h-latest-news"
+    textStyle="card-h"
+  >
+    Laatste nieuws blokje
+  </h3>
+  <nav>
+    <a
+      href="https://fd.nl"
+      target="_blank"
+    >
+      <time>
+        15:29
+      </time>
+      <span>
+        title van nieuwsbericht
+      </span>
+    </a>
+  </nav>
+  <a
+    href="/laatste-nieuws"
+  >
+    Ga naar laatste nieuws
+  </a>
+</div>
+`;
