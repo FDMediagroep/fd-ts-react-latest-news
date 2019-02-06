@@ -68,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
         border-top: 1px solid rgba(0,0,0,0.1);
         line-height: 1.2em;
         color: #191919;
-        &.is-read {
+        .is-read {
             opacity: 0.6;
         }
         &:hover {
