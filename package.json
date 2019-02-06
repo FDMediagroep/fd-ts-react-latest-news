@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-latest-news",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "FD-themed latest news",
   "types": "dist/LatestNews.d.ts",
   "main": "dist/latest-news.js",
@@ -39,9 +39,9 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.0",
-    "@types/react": "^16.7.20",
-    "@types/react-dom": "^16.0.11",
-    "@types/react-test-renderer": "^16.0.3",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "@types/react-test-renderer": "^16.8.0",
     "@types/styled-components": "^4.1.6",
     "@types/uniqid": "^4.1.2",
     "awesome-typescript-loader": "^5.2.1",
@@ -57,7 +57,7 @@
     "tslint": "^5.12.1",
     "tslint-react": "^3.6.0",
     "typescript": "^3.2.4",
-    "webpack": "^4.29.0",
+    "webpack": "^4.29.2",
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
