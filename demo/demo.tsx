@@ -22,6 +22,7 @@ ReactDOM.render(<>
                 news={[{
                     uuid: uniqid(),
                     dateTime: `11:18`,
+                    isRead: true,
                     title: `Provinciale lijsttrekkers CDA: stop met 'drammen en dromen' over klimaat`,
                     url: `https://fd.nl/economie-politiek/1288207/provinciale-lijsttrekkers-cda-stop-met-drammen-en-dromen-over-klimaat`
                 }, {

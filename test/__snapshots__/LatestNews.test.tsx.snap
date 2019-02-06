@@ -60,3 +60,35 @@ exports[`LatestNews renders correctly 2`] = `
   </a>
 </div>
 `;
+
+exports[`LatestNews renders is-read correctly 1`] = `
+<div
+  className="fd-card fd-card-latest-news"
+>
+  <h3
+    className="fd-typography card-h h-latest-news"
+    textStyle="card-h"
+  >
+    Laatste nieuws
+  </h3>
+  <nav>
+    <a
+      href="https://fd.nl"
+    >
+      <time>
+        15:29
+      </time>
+      <span
+        className="is-read"
+      >
+        title van nieuwsbericht
+      </span>
+    </a>
+  </nav>
+  <a
+    href="/laatste-nieuws"
+  >
+    Lees al het laatste nieuws
+  </a>
+</div>
+`;

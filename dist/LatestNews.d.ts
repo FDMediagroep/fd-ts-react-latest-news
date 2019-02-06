@@ -2,6 +2,7 @@ import { PureComponent } from "react";
 interface NewsItem {
     uuid: string;
     dateTime: string;
+    isRead?: boolean;
     target?: string;
     title: string;
     url: string;

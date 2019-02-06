@@ -9,4 +9,9 @@ describe('LatestNews', () => {
         latestNews = TestRenderer.create(<LatestNews className="class-name" linkText="Ga naar laatste nieuws" title="Laatste nieuws blokje" link='/laatste-nieuws' news={[{uuid: '2', dateTime: '15:29', title: 'title van nieuwsbericht', url: 'https://fd.nl', target: "_blank"}]}/>);
         expect(latestNews.toJSON()).toMatchSnapshot();
     });
+
+    test('renders is-read correctly', () => {
+        let latestNews = TestRenderer.create(<LatestNews link='/laatste-nieuws' news={[{uuid: '1', dateTime: '15:29', isRead: true, title: 'title van nieuwsbericht', url: 'https://fd.nl'}]}/>);
+        expect(latestNews.toJSON()).toMatchSnapshot();
+    });
 });

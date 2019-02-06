@@ -6,6 +6,7 @@ import { createGlobalStyle } from "styled-components";
 interface NewsItem {
     uuid: string;
     dateTime: string;
+    isRead?: boolean;
     target?: string;
     title: string;
     url: string;
@@ -33,7 +34,7 @@ export default class LatestNews extends PureComponent<Props, any> {
                                 return (
                                     <a key={newsItem.uuid} href={newsItem.url} target={newsItem.target}>
                                         <time>{newsItem.dateTime}</time>
-                                        <span>{newsItem.title}</span>
+                                        <span className={newsItem.isRead ? 'is-read' : undefined}>{newsItem.title}</span>
                                     </a>
                                 );
                             })
@@ -67,6 +68,9 @@ const GlobalStyle = createGlobalStyle`
         border-top: 1px solid rgba(0,0,0,0.1);
         line-height: 1.2em;
         color: #191919;
+        &.is-read {
+            opacity: 0.6;
+        }
         &:hover {
             color: #49a4a2;
         }
