@@ -73,6 +73,9 @@ const GlobalStyle = createGlobalStyle`
         }
         &:hover {
             color: #49a4a2;
+            .icon-chevron-right {
+                color: #49a4a2;
+            }
         }
         text-decoration: none;
         font-size: 16px;
@@ -83,6 +86,9 @@ const GlobalStyle = createGlobalStyle`
 
     .icon-chevron-right {
         float: right;
+        color: #677381;
+        font-size: 0.8125rem;
+        margin-top: 4px;
     }
 
     time {

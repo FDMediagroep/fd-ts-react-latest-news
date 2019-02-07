@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-latest-news",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "FD-themed latest news",
   "types": "dist/LatestNews.d.ts",
   "main": "dist/latest-news.js",
