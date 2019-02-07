@@ -40,7 +40,7 @@ export default class LatestNews extends PureComponent<Props, any> {
                             })
                         }
                     </nav>
-                    <a href={this.props.link}>{this.props.linkText ? this.props.linkText : 'Lees al het laatste nieuws'}</a>
+                    <a href={this.props.link}>{this.props.linkText ? this.props.linkText : 'Lees al het laatste nieuws'} <i className="icon-chevron-right"/></a>
                 </Card>
             </>
         );
@@ -79,6 +79,10 @@ const GlobalStyle = createGlobalStyle`
         @media only screen and (min-width: 641px) {
             font-size: 17px;
         }
+    }
+
+    .icon-chevron-right {
+        float: right;
     }
 
     time {

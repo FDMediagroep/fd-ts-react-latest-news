@@ -26,6 +26,10 @@ exports[`LatestNews renders correctly 1`] = `
     href="/laatste-nieuws"
   >
     Lees al het laatste nieuws
+     
+    <i
+      className="icon-chevron-right"
+    />
   </a>
 </div>
 `;
@@ -57,6 +61,10 @@ exports[`LatestNews renders correctly 2`] = `
     href="/laatste-nieuws"
   >
     Ga naar laatste nieuws
+     
+    <i
+      className="icon-chevron-right"
+    />
   </a>
 </div>
 `;
@@ -89,6 +97,10 @@ exports[`LatestNews renders is-read correctly 1`] = `
     href="/laatste-nieuws"
   >
     Lees al het laatste nieuws
+     
+    <i
+      className="icon-chevron-right"
+    />
   </a>
 </div>
 `;
