@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-latest-news",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "FD-themed latest news",
   "types": "dist/LatestNews.d.ts",
   "main": "dist/latest-news.js",
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@fdmg/fd-card": "^1.0.4",
-    "@fdmg/fd-typography": "^1.0.23",
+    "@fdmg/fd-typography": "^1.0.24",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "styled-components": "^4.1.3",
