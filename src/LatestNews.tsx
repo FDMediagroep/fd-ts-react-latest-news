@@ -62,6 +62,10 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
+    &.persoonlijk .h-latest-news {
+        color: #e57e30;
+    }
+
     > a,
     nav > a {
         display: block;
