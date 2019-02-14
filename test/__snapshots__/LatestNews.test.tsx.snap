@@ -2,7 +2,8 @@
 
 exports[`LatestNews renders correctly 1`] = `
 <div
-  className="fd-card fd-card-latest-news"
+  cardStyle="default"
+  className="fd-card fd-card-latest-news default"
 >
   <h3
     className="fd-typography card-h h-latest-news"
@@ -36,7 +37,8 @@ exports[`LatestNews renders correctly 1`] = `
 
 exports[`LatestNews renders correctly 2`] = `
 <div
-  className="fd-card fd-card-latest-news class-name"
+  cardStyle="article"
+  className="fd-card fd-card-latest-news class-name article"
 >
   <h3
     className="fd-typography card-h h-latest-news"
@@ -71,7 +73,8 @@ exports[`LatestNews renders correctly 2`] = `
 
 exports[`LatestNews renders is-read correctly 1`] = `
 <div
-  className="fd-card fd-card-latest-news"
+  cardStyle="persoonlijk"
+  className="fd-card fd-card-latest-news persoonlijk"
 >
   <h3
     className="fd-typography card-h h-latest-news"

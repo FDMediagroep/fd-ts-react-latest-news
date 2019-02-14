@@ -1,4 +1,5 @@
 import { PureComponent } from "react";
+import { CardTypes } from "@fdmg/fd-card";
 interface NewsItem {
     uuid: string;
     dateTime: string;
@@ -8,6 +9,7 @@ interface NewsItem {
     url: string;
 }
 export interface Props {
+    cardStyle: CardTypes;
     className?: string;
     link: string;
     linkText?: string;

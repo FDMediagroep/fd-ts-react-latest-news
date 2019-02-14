@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import Card, { CardStyle } from "@fdmg/fd-card";
+import Card, { CardStyle, CardTypes } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
 import { createGlobalStyle } from "styled-components";
 
@@ -13,6 +13,7 @@ interface NewsItem {
 }
 
 export interface Props {
+    cardStyle: CardTypes;
     className?: string;
     link: string;
     linkText?: string;
@@ -26,7 +27,7 @@ export default class LatestNews extends PureComponent<Props, any> {
         return (
             <>
                 <GlobalStyle/>
-                <Card className={`fd-card-latest-news${this.props.className ? ` ${this.props.className}` : ''}`}>
+                <Card cardStyle={this.props.cardStyle} className={`fd-card-latest-news${this.props.className ? ` ${this.props.className}` : ''}`}>
                     <TypoGraphy className="h-latest-news" textStyle='card-h'><h3>{this.props.title ? this.props.title : 'Laatste nieuws'}</h3></TypoGraphy>
                     <nav>
                         {
