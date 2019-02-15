@@ -62,10 +62,6 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
-    &.persoonlijk .h-latest-news {
-        color: #e57e30;
-    }
-
     > a,
     nav > a {
         display: block;
@@ -83,9 +79,9 @@ const GlobalStyle = createGlobalStyle`
             }
         }
         text-decoration: none;
-        font-size: 16px;
+        font-size: 1rem;
         @media only screen and (min-width: 641px) {
-            font-size: 17px;
+            font-size: 1.0625rem;
         }
     }
 
