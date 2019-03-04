@@ -50,7 +50,7 @@ export default class LatestNews extends PureComponent<Props, any> {
 
 const GlobalStyle = createGlobalStyle`
 .fd-card-latest-news {
-    .h-latest-news,
+    h3.h-latest-news,
     > a,
     nav > a {
         padding: 12px 10px;
