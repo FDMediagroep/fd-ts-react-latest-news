@@ -1,7 +1,7 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import Card, { CardStyle, CardTypes } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 interface NewsItem {
     uuid: string;
@@ -21,34 +21,31 @@ export interface Props {
     title?: string;
 }
 
-export default class LatestNews extends PureComponent<Props, any> {
-
-    render() {
-        return (
-            <>
-                <GlobalStyle/>
-                <Card cardStyle={this.props.cardStyle} className={`fd-card-latest-news${this.props.className ? ` ${this.props.className}` : ''}`}>
-                    <TypoGraphy className="h-latest-news" textStyle='card-h'><h3>{this.props.title ? this.props.title : 'Laatste nieuws'}</h3></TypoGraphy>
-                    <nav>
-                        {
-                            this.props.news.map((newsItem) => {
-                                return (
-                                    <a key={newsItem.uuid} href={newsItem.url} target={newsItem.target}>
-                                        <time>{newsItem.dateTime}</time>
-                                        <span className={newsItem.isRead ? 'is-read' : undefined}>{newsItem.title}</span>
-                                    </a>
-                                );
-                            })
-                        }
-                    </nav>
-                    <a href={this.props.link}>{this.props.linkText ? this.props.linkText : 'Lees al het laatste nieuws'} <i className="icon-chevron-right"/></a>
-                </Card>
-            </>
-        );
-    }
+export default function LatestNews(props: Props) {
+    return (
+        <>
+            <GlobalStyle/>
+            <Card cardStyle={props.cardStyle} className={`fd-card-latest-news${props.className ? ` ${props.className}` : ''}`}>
+                <TypoGraphy className="h-latest-news" textStyle='card-h'><h3>{props.title ? props.title : 'Laatste nieuws'}</h3></TypoGraphy>
+                <nav>
+                    {
+                        props.news.map((newsItem) => {
+                            return (
+                                <a key={newsItem.uuid} href={newsItem.url} target={newsItem.target}>
+                                    <time>{newsItem.dateTime}</time>
+                                    <span className={newsItem.isRead ? 'is-read' : undefined}>{newsItem.title}</span>
+                                </a>
+                            );
+                        })
+                    }
+                </nav>
+                <a href={props.link}>{props.linkText ? props.linkText : 'Lees al het laatste nieuws'} <i className="icon-chevron-right"/></a>
+            </Card>
+        </>
+    );
 }
 
-const GlobalStyle = createGlobalStyle`
+const styles = css`
 .fd-card-latest-news {
     h3.h-latest-news,
     > a,
@@ -103,8 +100,10 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 
-export const LatestNewsStyle = createGlobalStyle`
-    ${(CardStyle as any).globalStyle.rules}
-    ${getAllTextStyles(['card-h']).globalStyle.rules}
-    ${(GlobalStyle as any).globalStyle.rules}
+export const LatestNewsStyle = css`
+${CardStyle}
+${getAllTextStyles(['card-h'])}
+${styles}
 `;
+
+const GlobalStyle = createGlobalStyle`${LatestNewsStyle}`;

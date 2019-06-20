@@ -1,4 +1,3 @@
-import { PureComponent } from "react";
 import { CardTypes } from "@fdmg/fd-card";
 interface NewsItem {
     uuid: string;
@@ -16,8 +15,6 @@ export interface Props {
     news: NewsItem[];
     title?: string;
 }
-export default class LatestNews extends PureComponent<Props, any> {
-    render(): JSX.Element;
-}
-export declare const LatestNewsStyle: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
+export default function LatestNews(props: Props): JSX.Element;
+export declare const LatestNewsStyle: import("styled-components").FlattenSimpleInterpolation;
 export {};
