@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/FDMediagroep/fd-ts-react-latest-news.svg?branch=master)](https://travis-ci.org/FDMediagroep/fd-ts-react-latest-news)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fd-ts-react-latest-news/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fd-ts-react-latest-news?branch=master)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Ffd-latest-news.svg)](https://badge.fury.io/js/%40fdmg%2Ffd-latest-news)
-[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fd-ts-react-latest-news.svg)](https://greenkeeper.io/)
+
 
 # fd-latest-news
 FD-themed latest news.
