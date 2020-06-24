@@ -1,20 +1,27 @@
+> :exclamation: **DEPRECATED** :exclamation: : Superseded by @fdmg/design-system. See: https://github.com/FDMediagroep/fd-design-system
+
 [![Build Status](https://travis-ci.org/FDMediagroep/fd-ts-react-latest-news.svg?branch=master)](https://travis-ci.org/FDMediagroep/fd-ts-react-latest-news)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fd-ts-react-latest-news/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fd-ts-react-latest-news?branch=master)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Ffd-latest-news.svg)](https://badge.fury.io/js/%40fdmg%2Ffd-latest-news)
 [![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fd-ts-react-latest-news.svg)](https://greenkeeper.io/)
 
 # fd-latest-news
+
 FD-themed latest news.
 
 # Installation
-* Run `npm i -D @fdmg/fd-latest-news`
+
+-   Run `npm i -D @fdmg/fd-latest-news`
 
 # Demo
+
 To run the demo, check-out this repository and run `npm run build-demo`.
 After the build succeeded you can open `dist/demo.html` with your webbrowser.
-* [Demo](http://static.fd.nl/react/latest-news/demo.html)
+
+-   [Demo](http://static.fd.nl/react/latest-news/demo.html)
 
 # Usage
+
 ```
 import LatestNews from '@fdmg/fd-latest-news';
 ...
